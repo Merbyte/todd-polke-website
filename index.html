@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todd Polke | Architect of Financial Sovereignty</title>
+    <meta name="description" content="Escape the middle. Build sovereign wealth through engineered portfolio systems. Todd Polke's PWOS Framework for high performers." />
+    
+    <!-- Brand-Compliant Fonts per Guidelines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Exact brand colors from guidelines
+              sovereign: '#0A0A0A',      // Sovereign Black - 60% dominance
+              gold: '#D4AF37',           // Antique Gold - 20% accent
+              ivory: '#FFF8E7',          // Warm Ivory - 15% breathing space
+              burgundy: '#800020',       // Deep Burgundy - special emphasis
+              stone: {
+                DEFAULT: '#8B8680',      // Stone Grey - supporting text
+                dark: '#2A2A2A',
+                300: '#B8B5B0',
+              }
+            },
+            fontFamily: {
+              // Brand-compliant fonts per guidelines
+              display: ['Playfair Display', 'serif'],      // Headlines
+              sans: ['Inter', 'sans-serif'],               // Body text
+              mono: ['JetBrains Mono', 'monospace'],       // Data display
+            },
+            animation: {
+              'gradient': 'gradient 15s ease infinite',
+            },
+            keyframes: {
+              gradient: {
+                '0%, 100%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-sovereign text-ivory antialiased selection:bg-gold selection:text-sovereign">
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
